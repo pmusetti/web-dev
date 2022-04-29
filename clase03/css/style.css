@@ -1,5 +1,7 @@
-* {}
-
+*{
+    padding: 0;
+    margin: 0;
+}
 body {
     background-color: rgba(167, 130, 64, 0.466);
 }
@@ -7,9 +9,48 @@ body {
 h1 {
     text-align: left;
 }
+nav{
+    background-color: rgb(250, 117, 117);
+    color: rgb(2, 2, 87);
+    font-family: 'Open Sans', sans-serif;
+    position: fixed;
+    text-align: right;
+    width: 100%;
+}
+section{
+    margin-top: 20px;
+}
+.fondo-productos{
+    background-color: rgba(154, 148, 163, 0.541);
+}
+.header {
+    background-image: url(../img/torta.jpg); /* linear-gradient(rgba(78, 44, 4, 0.678), rgba(255, 255, 255, 0.637)), */
+    display: flex;
+    align-items: center;
+    min-height: 50vh;
+    /*min-height: 500px;
 
-header{
-    background-image: url(../img/torta.jpg);    
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#mision{
+    margin: 30px;
+    padding: 20px;
+}
+.titulo{
+    font-family: 'Suez One', serif;
+    color: rgb(211, 79, 79);
+    text-align: center;
+}
+
+.logo-container {
+    padding: 16px;
+    width: 40%;
+    margin: auto;
+    text-align: center;
 }
 
 ul {
@@ -19,7 +60,7 @@ ul {
 .logoText {
     font-family: 'Yellowtail', cursive;
     font-weight: 200;
-    
+
 }
 
 .logo {
@@ -27,6 +68,19 @@ ul {
 }
 
 .slogan {
-    width: 30%;
+    
     text-align: center;
+    margin: auto;
+}
+
+.galeria{
+    text-align: center;
+}
+
+.galeria img{
+    padding: 16px;
+    margin: auto;
+    width: 25%;
+    height: 20vw;
+    border-radius: 30px;
 }
