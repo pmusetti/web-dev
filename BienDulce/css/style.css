@@ -1,0 +1,152 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgba(255, 255, 255, 0.466);
+}
+
+nav {
+    background-color: rgb(255, 255, 255);
+    color: rgb(2, 2, 87);
+    font-family: 'Open Sans', sans-serif;
+    position: fixed;
+    text-align: right;
+    width: 100%;
+    height: 80px;
+    align-items: center;
+    border-bottom: 20px solid #bae8d4;
+}
+
+nav li {
+    display: inline;
+
+}
+
+nav li a {
+    color: black;
+    margin: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: small;
+    font-weight: 800;
+    text-decoration: none;
+    align-items: center;
+    margin: 10px;
+}
+
+section {
+    margin-top: 100px;
+}
+
+.fondo-productos {
+    background-color: rgb(255, 255, 255);
+    
+}
+
+.header {
+    background-image: url(../assets/img/bg.jpg);
+    /* linear-gradient(rgba(78, 44, 4, 0.678), rgba(255, 255, 255, 0.637)), */
+    display: flex;
+    align-items: center;
+    min-height: 90vh;
+    /*min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+    /*background-attachment: fixed;*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo {
+    border-radius: 50%;
+    width: 5%;
+    min-width: 100px;
+    border-bottom: 5px solid rgb(228, 199, 36);
+
+}
+
+.logo-container {
+    position: fixed;
+    width: 100%;
+    min-height: 350px;
+    top: 20px;
+    margin: auto;
+    text-align: center;
+}
+
+
+.main-text {
+    margin: auto;
+    padding: 5%;
+    font-family: 'Montserrat', sans-serif;
+    width: 60%;
+    text-align: center;
+}
+
+.titulo {
+    background-color: white;
+    height: 100px;
+    font-family: 'Merienda', cursive;
+    font-family: 'Sriracha', cursive;
+    font-family: 'Courgette', cursive;
+    font-size: 2.5vw;
+    color: rgb(39, 39, 39);
+    text-align: center;
+}
+
+
+ul {
+    list-style: none;
+}
+
+.galeria {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.galeria img {
+    padding: 16px;
+    margin: auto;
+    width: 20vh;
+    height: auto;
+    border-radius: 30px;
+}
+
+.media-icon{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 100px;
+}
+.media-icon img{
+    padding: 32px;
+    margin: auto;
+    width: 8vh;
+    height: 8vh;
+    border-radius: 35%;
+}
+.comment-container{
+    margin: auto;
+    padding: 50px;
+    width: 20%;
+    min-width: 400px;
+    height: 30%;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    color: rgb(119, 119, 119);
+    text-align: center;
+}
+
+.verde-pastel {
+    background-color: #bae8d4;
+}
+
+footer{
+    height: 10vh;
+    background-color: rgb(20, 20, 20);
+}
