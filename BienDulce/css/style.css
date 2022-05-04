@@ -7,77 +7,66 @@ body {
     background-color: rgba(255, 255, 255, 0.466);
 }
 
-nav {
-    background-color: rgb(255, 255, 255);
-    color: rgb(2, 2, 87);
-    font-family: 'Open Sans', sans-serif;
+.navBar {
     position: fixed;
-    text-align: right;
     width: 100%;
+    text-align: right;
     height: 80px;
-    align-items: center;
-    border-bottom: 20px solid #bae8d4;
+    background-color: #ffe7cc;
 }
 
-nav li {
+.navBar__list {
+    list-style-type: none;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.navBar__listItem {
     display: inline;
-
+    margin: 5px;
+    line-height: 80px;
 }
 
-nav li a {
-    color: black;
-    margin: 10px;
+.navBar__listItem a {
     font-family: 'Montserrat', sans-serif;
-    font-size: small;
-    font-weight: 800;
+    font-size: medium;
+    color: rgb(32, 32, 32);
     text-decoration: none;
-    align-items: center;
-    margin: 10px;
+    text-align: center;
 }
 
 section {
-    margin-top: 100px;
-}
-
-.fondo-productos {
-    background-color: rgb(255, 255, 255);
-    
+    padding: 100px 0;
 }
 
 .header {
     background-image: url(../assets/img/bg.jpg);
-    /* linear-gradient(rgba(78, 44, 4, 0.678), rgba(255, 255, 255, 0.637)), */
-    display: flex;
-    align-items: center;
     min-height: 90vh;
-    /*min-height: 500px;
-
-  /* Create the parallax scrolling effect */
-    /*background-attachment: fixed;*/
     background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
+    align-items: center;
+}
+
+.header__logoContainer {
+    position: fixed;
+    top: 18px;
+    margin: auto;
+
+    /*! align-content: center; */
+    text-align: center;
+    width: 100%;
 }
 
 .logo {
     border-radius: 50%;
     width: 5%;
     min-width: 100px;
-    border-bottom: 5px solid rgb(228, 199, 36);
+    border-bottom: 5px solid #bae8d4;
 
 }
 
-.logo-container {
-    position: fixed;
-    width: 100%;
-    min-height: 350px;
-    top: 20px;
-    margin: auto;
-    text-align: center;
-}
 
-
-.main-text {
+.mainText {
     margin: auto;
     padding: 5%;
     font-family: 'Montserrat', sans-serif;
@@ -86,20 +75,15 @@ section {
 }
 
 .titulo {
-    background-color: white;
     height: 100px;
     font-family: 'Merienda', cursive;
     font-family: 'Sriracha', cursive;
     font-family: 'Courgette', cursive;
-    font-size: 2.5vw;
+    font-size: 230%;
     color: rgb(39, 39, 39);
     text-align: center;
 }
 
-
-ul {
-    list-style: none;
-}
 
 .galeria {
     text-align: center;
@@ -116,24 +100,20 @@ ul {
     border-radius: 30px;
 }
 
-.media-icon{
+.mediaIcon {
     text-align: center;
-    width: 80%;
-    margin: auto;
-    margin-bottom: 100px;
 }
-.media-icon img{
-    padding: 32px;
-    margin: auto;
-    width: 8vh;
-    height: 8vh;
-    border-radius: 35%;
+
+.mediaIcon a {
+    font-size: 100px;
+    margin: 50px;
 }
-.comment-container{
+
+.commentContainer {
     margin: auto;
     padding: 50px;
     width: 20%;
-    min-width: 400px;
+    min-width: 300px;
     height: 30%;
     font-family: 'Rajdhani', sans-serif;
     font-size: 30px;
@@ -142,11 +122,25 @@ ul {
     text-align: center;
 }
 
-.verde-pastel {
+.verdePastel {
     background-color: #bae8d4;
 }
 
-footer{
+.fa-facebook {
+    color: #3b5998;
+}
+
+.fa-instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fa-whatsapp {
+    color: #25d366;
+}
+
+footer {
     height: 10vh;
     background-color: rgb(20, 20, 20);
 }

@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bien Dulce</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/a9ec8fe634.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -17,29 +18,29 @@
 
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="./index.html">INICIO</a></li>
-                <li><a href="./index.html#productos">PRODUCTOS</a></li>
-                <li><a href="./pages/gallery.html">GALERIA</a></li>
-                <li><a href="./pages/about.html">SOBRE MI</a></li>
-                <li><a href="./pages/cotizador.html">COTIZA</a></li>
-                <li><a href="./index.html#contacto">CONTACTO</a></li>
+        <nav class="navBar">
+            <ul class="navBar__list">
+                <li class="navBar__listItem"><a href="./index.html" >INICIO</a></li>
+                <li class="navBar__listItem"><a href="./index.html#productos" >PRODUCTOS</a></li>
+                <li class="navBar__listItem"><a href="./pages/gallery.html" >GALERIA</a></li>
+                <li class="navBar__listItem"><a href="./pages/about.html" >SOBRE MI</a></li>
+                <li class="navBar__listItem"><a href="./pages/cotizador.html" >COTIZA</a></li>
+                <li class="navBar__listItem"><a href="./index.html#contacto" >CONTACTO</a></li>
             </ul>
+
         </nav>
 
-        <div class="header" id="inicio">
-            <div class="logo-container">
-                <img class="logo" src="./assets/img/logo.jpeg" alt="Logotipo Bien Dulce cocina creativa">
-
+        <div class="header">
+            <div class="header__logoContainer">
+                <img class="logo" src="./assets/img/logo.jpeg" alt="">
             </div>
         </div>
     </header>
     <main>
 
-        <section id="productos" class="fondo-productos productos-container">
+        <section id="productos">
             <h2 class="titulo">Conoce nuestro productos</h2>
-            <p class="main-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime, tenetur consequatur
+            <p class="mainText">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime, tenetur consequatur
                 at
                 eos id
                 quas
@@ -49,17 +50,17 @@
                 fugit
                 porro sapiente enim maiores sequi velit.</p>
             <div class="galeria">
-                <img src="./assets/img/Tortas/torta1.jpg" alt="torta 60 anos">
-                <img src="./assets/img/Tortas/torta2.jpg" alt="torta de chocloate">
-                <img src="./assets/img/Tortas/torta3.jpg" alt="torta de frutilla">
-                <img src="./assets/img/Tortas/torta4.jpg" alt="torta con motivos de helados">
-                <img src="./assets/img/Tortas/torta5.jpg" alt="torta de merengue">
+                <img src="./assets/img/Tortas/torta1.jpg" alt="">
+                <img src="./assets/img/Tortas/torta2.jpg" alt="">
+                <img src="./assets/img/Tortas/torta3.jpg" alt="">
+                <img src="./assets/img/Tortas/torta4.jpg" alt="">
+                <img src="./assets/img/Tortas/torta5.jpg" alt="">
             </div>
         </section>
 
-        <section id="golosinas" class="verde-pastel">
+        <section id="golosinas" class="verdePastel">
             <h2 class="titulo">Golosinas para cualquier ocasión</h2>
-            <p class="main-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime, tenetur consequatur
+            <p class="mainText">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime, tenetur consequatur
                 at
                 eos id
                 quas
@@ -77,9 +78,9 @@
             </div>
         </section>
 
-        <section id="clientes" >
+        <section id="opioniones" >
             <h2 class="titulo">Lo que opinan nuestros clientes!</h2>
-            <div class="comment-container">
+            <div class="commentContainer">
                 <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti sequi minus est soluta ex, fugiat
                     ipsam quam quidem accusantium expedita inventore, quasi cum, voluptatum ut ipsa! Et exercitationem
                     quisquam suscipit."
@@ -88,9 +89,9 @@
             </div>
         </section>
 
-        <section id="contacto" class="verde-pastel">
+        <section id="contacto" class="verdePastel">
             <h2 class="titulo">Contactate con nosotros</h2>
-            <p class="main-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae cumque aliquam ab
+            <p class="mainText">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae cumque aliquam ab
                 dignissimos. Itaque
                 voluptas rerum in iure eos repellendus quaerat placeat explicabo rem, architecto, pariatur, earum
                 exercitationem cupiditate deleniti.
@@ -100,12 +101,12 @@
                 Explicabo eum quo eos, maiores similique esse dolorem, architecto quas qui maxime voluptate ea, optio
                 reprehenderit doloribus aliquam facere voluptatem suscipit sint quaerat labore eius inventore? Molestias
                 illum quasi aspernatur.
-                <div class="media-icon">
-                    <a href=""><img src="./assets/img/fb.png" alt="facebook"></a>
-                    <a href="https://www.instagram.com/cocinabiendulce/" target="_blank"><img src="./assets/img/ig.png"
-                            alt="instagram"></a>
+                <div class="mediaIcon">
+                    <a href=""><i class="fa-brands fa-facebook"></i></i></a>
+                    <a href="https://www.instagram.com/cocinabiendulce/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                     <a href="https://wa.me/098685740?text=Hola%20estoy%20tengo%20interes%20en%20uno%20de%20sus%20productos"
-                        target="_blank"><img src="./assets/img/wp.png" alt="whatsapp"></a>
+                        target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                        
                 </div>
             </p>
         </section>
