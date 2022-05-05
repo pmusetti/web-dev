@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: rgba(255, 255, 255, 0.466);
 }
@@ -12,7 +16,6 @@ body {
     width: 100%;
     text-align: right;
     height: 80px;
-    background-color: #ffe7cc;
 }
 
 .navBar__list {
@@ -40,36 +43,25 @@ section {
 }
 
 .header {
-    background-image: url(../assets/img/bg.jpg);
     min-height: 90vh;
     background-position: center;
     background-size: cover;
     align-items: center;
 }
 
-.header__logoContainer {
-    position: fixed;
-    top: 18px;
-    margin: auto;
-
-    /*! align-content: center; */
-    text-align: center;
-    width: 100%;
-}
-
-.logo {
-    border-radius: 50%;
-    width: 5%;
-    min-width: 100px;
-    border-bottom: 5px solid #bae8d4;
-
-}
-
-
 .mainText {
     margin: auto;
     padding: 5%;
     font-family: 'Montserrat', sans-serif;
+    width: 60%;
+    text-align: center;
+}
+
+.cardText {
+    margin: auto;
+    padding: 5%;
+    font-family: 'Courgette', sans-serif;
+    font-size: 1.2vw;
     width: 60%;
     text-align: center;
 }
@@ -100,6 +92,63 @@ section {
     border-radius: 30px;
 }
 
+.album {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.album p {
+    margin: auto;
+    padding: 5%;
+    font-family: 'Montserrat', sans-serif;
+    width: 60%;
+    text-align: center;
+
+}
+
+.card {
+    display: inline-block;
+    margin: 20px;
+    width: 30%;
+    height: auto;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 30px;
+}
+
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    /* border-bottom: 1px dotted black; */
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 70%;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    margin-top: -90%;
+    right: 15%;
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+
+}
+
+
+
+
 .mediaIcon {
     text-align: center;
 }
@@ -122,7 +171,58 @@ section {
     text-align: center;
 }
 
-.verdePastel {
+footer {
+    height: 10vh;
+    background-color: rgb(20, 20, 20);
+}
+
+*
+/***********IMAGENES*************/
+
+.header__inicio {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(143, 143, 143, 0.177) 10%, rgba(0, 0, 0, 0) 100%), url(../assets/img/torta.jpg);
+}
+
+.header__gallery {
+    background-image: url(../assets/img/gallery_bg.jpg);
+
+}
+
+.header__about {
+    background-image: url(../assets/img/about_bg.jpg);
+}
+
+.header__cotiza {
+    background-image: url(../assets/img/cotiza_bg.webp);
+}
+
+
+.logo {
+    position: fixed;
+    left: 50%;
+    margin-left: -50px;
+    top: 20px;
+    border-radius: 50%;
+    width: 100px;
+    border-bottom: 5px solid #bae8d4;
+}
+
+.profile__img {
+    background-image: url("../assets/img/profile.jpeg");
+    display: block;
+    width: 30%;
+    height: 50%;
+    margin: 0 auto;
+}
+
+/************COLORES*************/
+
+.navBar__bg {
+
+    background-color: #ffccc0;
+}
+
+.section__bg {
     background-color: #bae8d4;
 }
 
@@ -133,14 +233,10 @@ section {
 .fa-instagram {
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
     background-clip: text;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .fa-whatsapp {
     color: #25d366;
-}
-
-footer {
-    height: 10vh;
-    background-color: rgb(20, 20, 20);
 }
