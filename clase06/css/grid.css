@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    background-color: rgb(254, 170, 247);
+    height: 790px;
+}
+
+section div {
+    border: 2px dashed midnightblue;
+    background-color: rgb(179, 241, 220);
+    margin: 2px;
+}
+
+.gridUno,
+.gridNueve {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2rem;
+}
+
+.gridDos,
+.gridTres,
+.gridCuatro,
+.gridSeis,
+.gridSiete,
+.gridOcho {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3rem;
+    padding: 20px;
+}
+
+/* ----------------FIN ESTILOS BÁSICOS---------------- */
+
+section {
+    display: grid;
+    grid-template-columns: repeat(3, 20vw);
+    grid-template-rows: repeat(3, 20vw);
+    justify-content: space-around;
+    align-content: space-around;
+    
+    
+}
+
+.gridCinco img{
+   width: 100%;
+}
+
+.gridOcho{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}

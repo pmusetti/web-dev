@@ -10,23 +10,43 @@ html {
 body {
     background-color: rgba(255, 255, 255, 0.466);
 }
-.header {
-    min-height: 90vh;
-    background-position: center;
-    background-size: cover;
-    align-items: center;
+
+section {
+    padding: 10vh 0;
 }
+
+/********** SUBMENU *********/
+.submenu{
+    display: none;
+}
+.navBar__menu:hover > .submenu{
+    display: block;
+    list-style: none;
+    position: absolute;
+    background-color: #ffccc0;
+    
+}
+.submenu li{
+    padding: 5px 0;
+}
+.submenu li:hover{
+    background-color: #ffddcd;
+    
+}
+
+
+/********** TEXTO **********/
 .mainText {
     margin: auto;
     padding: 5%;
     font-family: 'Montserrat', sans-serif;
     width: 60%;
     text-align: center;
-    
+
 }
 
 .titulo {
-    height: 100px;
+    height: 10vh;
     font-family: 'Merienda', cursive;
     font-family: 'Sriracha', cursive;
     font-family: 'Courgette', cursive;
@@ -36,54 +56,59 @@ body {
 }
 
 
-/*******************NAVBAR*************************/
+/********** NAVBAR **********/
 .navBar {
     position: fixed;
     width: 100%;
-    text-align: right;
-    height: 80px;
+    height: 9vh;
     z-index: 2;
+    display: flex;
+    justify-content: end;
+
 }
 
 .navBar__list {
+    display: flex;
     list-style-type: none;
     align-items: center;
-    margin-right: 10px;
+    margin-right: 1vw;
 }
 
-.navBar__listItem {
-    display: inline;
-    margin: 5px;
-    line-height: 80px;
-}
 
-.navBar__listItem a {
+.navBar__list a {
     font-family: 'Montserrat', sans-serif;
     font-size: medium;
     color: rgb(32, 32, 32);
     text-decoration: none;
-    text-align: center;
-}
-/***********************************************************/
-
-section {
-    padding: 100px 0;
+    margin: 0.5vw;
 }
 
-/*************************GALERIA**************************/
-.galeria {
-    width: 80%;
-    margin: auto;
+/*********** PRODUCTOS **********/
+.prods {
     display: flex;
-}
-
-.galeria img {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
     margin: auto;
 }
+.prods__card{
+    display: flex;
+    flex-direction: column;
+    margin: 1%;
+    width: 15%;
+    min-width: 300px;
+    
+}
 
+.prods__card img{
+    width: 100%;
+}
+.prods__card a {
+    text-decoration: none;
+}
 
-/*******************ALBUM**************************/
-.album {
+/********** ALBUM **********/
+.album, .prods{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -92,15 +117,15 @@ section {
     margin-bottom: 100px;
 }
 
-
-.album__card{
+.album__card {
     display: flex;
     flex-direction: column;
     margin: 1%;
     width: 30%;
-    height: auto;
+    min-width: 400px;
 }
-.album__card h3{
+
+.album__card h3 {
     color: #4b244d;
 }
 
@@ -109,11 +134,11 @@ section {
     z-index: -1;
 }
 
-.album__card a{
+.album__card a {
     text-decoration: none;
 }
 
-/*********************TOOLTIP***********************/
+/********** TOOLTIP **********/
 .tooltip {
     position: relative;
     display: inline-block;
@@ -134,7 +159,7 @@ section {
     right: 15%;
     position: absolute;
     z-index: 1;
-   
+
 
 }
 
@@ -142,56 +167,68 @@ section {
     visibility: visible;
 
 }
-/*********************OPCIONES*********************/
-table{
+
+/********** TABLA **********/
+table {
     width: 50%;
     margin: 5% auto;
 }
-table, th, td{
+
+table,
+th,
+td {
     border: solid rgb(221, 221, 221);
 }
-td ul{
+
+td ul {
     margin-left: 20px;
 }
 
-.cotizador{
+/********** COTIZADOR **********/
+.cotizador {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 30%;
 }
-.cotizador select{
+
+.cotizador select {
     margin: 10px 0;
     padding: 10px;
 }
-.cotizador label{
+
+.cotizador label {
     text-align: left;
 }
-.cotizador__btn--ok{
+
+.cotizador__btn--ok {
     margin: 20px auto;
     padding: 20px;
     border-radius: 10px;
     width: 100%;
     background-color: rgb(21, 161, 84);
 }
-.cotizador__btn--ok:hover{
+
+.cotizador__btn--ok:hover {
     background-color: rgb(0, 107, 168);
 }
-.precio{
+
+.precio {
     height: 40px;
     font-size: large;
 }
-/*********************ICONOS***********************/
-.mediaIcon__container {
+
+/********** ICONOS **********/
+.socialIcon__container {
     text-align: center;
 }
 
-.mediaIcon__container a {
-    font-size: 100px;
+.socialIcon__container a {
+    font-size: 80px;
     margin: 50px;
 }
 
-/********************COMENTARIOS***********************/
+/********** COMENTARIOS **********/
 
 .commentContainer {
     margin: auto;
@@ -206,33 +243,39 @@ td ul{
     text-align: center;
 }
 
-/******************FOOTER**********************************/
+/********** FOOTER **********/
 footer {
     height: 10vh;
     background-color: rgb(20, 20, 20);
 }
 
 
-/***********IMAGENES*************/
+/********** BANNER **********/
+.banner {
+    min-height: 90vh;
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+}
 
-.header__inicio {
+.banner__inicio {
     background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(143, 143, 143, 0.177) 10%, rgba(0, 0, 0, 0) 100%), url(../assets/img/torta.jpg);
 }
 
-.header__gallery {
+.banner__gallery {
     background-image: url(../assets/img/gallery_bg.jpg);
 
 }
 
-.header__about {
+.banner__about {
     background-image: url(../assets/img/about_bg.jpg);
 }
 
-.header__cotiza {
+.banner__cotiza {
     background-image: url(../assets/img/cotiza_bg.webp);
 }
 
-
+/********** LOGO **********/
 .logo {
     position: fixed;
     left: 50%;
@@ -244,6 +287,7 @@ footer {
     z-index: 2;
 }
 
+/********** PROFILE IMG **********/
 .profile__img {
     background-image: url("../assets/img/profile.jpeg");
     display: block;
@@ -252,7 +296,7 @@ footer {
     margin: 0 auto;
 }
 
-/************COLORES*************/
+/********** COLORES **********/
 
 .navBar__bg {
 

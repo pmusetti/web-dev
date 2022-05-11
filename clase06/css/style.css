@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: tomato;
+    grid-area: gridHeader;
+}
+nav{
+    background-color: #BC342C;
+    grid-area: gridNav;
+}
+main{
+    background-color: #ED4534;
+    grid-area: gridMain;
+}
+section{
+    background-color: #F6C76F;
+    grid-area: gridSection;
+}
+aside{
+    background-color: #004B5A;
+    grid-area: gridAside;
+}
+footer{
+    background-color: #071F41;
+    grid-area: gridFooter;
+}
+
+
+/****** ARRANCAMOS ACA******/
+
+div{
+    border: #004B5A solid;
+    display: grid;
+    grid-template-areas:
+    "gridNav gridHeader gridHeader"
+    "gridNav gridMain gridMain"
+    "gridNav gridSection gridAside"
+    "gridNav gridFooter gridFooter";
+    grid-template-columns:  repeat(3, 1fr) ;
+    grid-template-rows: repeat(4, 25vh);
+    column-gap: 20px;
+    row-gap: 20px;
+
+}
+
