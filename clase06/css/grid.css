@@ -35,20 +35,18 @@ section div {
 
 section {
     display: grid;
-    grid-template-columns: repeat(3, 20vw);
-    grid-template-rows: repeat(3, 20vw);
-    justify-content: space-around;
-    align-content: space-around;
-    
-    
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
 }
 
-.gridCinco img{
-   width: 100%;
-}
-
-.gridOcho{
-    display: grid;
+.gridCinco {
+    display: flex;
+    justify-content: center;
     align-items: center;
-    justify-items: center;
+}
+
+.gridOcho {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
