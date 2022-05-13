@@ -16,22 +16,25 @@ section {
 }
 
 /********** SUBMENU *********/
-.submenu{
+.submenu {
     display: none;
 }
-.navBar__menu:hover > .submenu{
+
+.navBar__menu:hover>.submenu {
     display: block;
     list-style: none;
     position: absolute;
     background-color: #ffccc0;
-    
+
 }
-.submenu li{
+
+.submenu li {
     padding: 5px 0;
 }
-.submenu li:hover{
+
+.submenu li:hover {
     background-color: #ffddcd;
-    
+
 }
 
 
@@ -91,24 +94,27 @@ section {
     width: 90%;
     margin: auto;
 }
-.prods__card{
+
+.prods__card {
     display: flex;
     flex-direction: column;
     margin: 1%;
     width: 15%;
     min-width: 300px;
-    
+
 }
 
-.prods__card img{
+.prods__card img {
     width: 100%;
 }
+
 .prods__card a {
     text-decoration: none;
 }
 
 /********** ALBUM **********/
-.album, .prods{
+.album,
+.prods {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -253,18 +259,21 @@ footer {
 /********** BANNER **********/
 .banner {
     min-height: 90vh;
+    background-image: url("../assets/img/bg.jpg");
     background-position: center;
     background-size: cover;
     align-items: center;
 }
 
+
 .banner__inicio {
-    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(143, 143, 143, 0.177) 10%, rgba(0, 0, 0, 0) 100%), url(../assets/img/torta.jpg);
+    background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgba(0, 0, 0, 0) 30%), url(../assets/img/bg.jpg);
+   background-position: center;
+    background-size: cover;
 }
 
 .banner__gallery {
     background-image: url(../assets/img/gallery_bg.jpg);
-
 }
 
 .banner__about {
@@ -278,11 +287,11 @@ footer {
 /********** LOGO **********/
 .logo {
     position: fixed;
+    width: 100px;
     left: 50%;
     margin-left: -50px;
     top: 20px;
     border-radius: 50%;
-    width: 100px;
     border-bottom: 5px solid #bae8d4;
     z-index: 2;
 }
